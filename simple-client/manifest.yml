@@ -1,0 +1,9 @@
+applications:
+- name: simple-client
+  instances: 7
+  memory: 1G
+  path: target/simple-client-0.0.1-SNAPSHOT.jar
+  services:
+  - service-registry
+  - circuit-breaker
+  - config-server
